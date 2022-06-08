@@ -8,22 +8,7 @@ Examples :
 */
 
 fn count_bits(n: i64) -> u32 {
-    let binary_rep = format!("{:b}", n);
-    let max:usize = binary_rep.chars().count();
-
-    let mut i:usize = 0;
-    let mut bits: u32 = 0;
-    let mut ch:char;
-
-    while i < max {
-        ch = binary_rep.chars().nth(i).unwrap();
-        if ch == '1' {
-            bits += 1;
-        }
-        i += 1;
-    }
-
-    return bits;
+    return n.count_ones();
 }
 
 fn main() {
