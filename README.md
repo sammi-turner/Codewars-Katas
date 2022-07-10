@@ -1,3 +1,3 @@
 # Codewars-Katas
 
-Readable rust solutions to assorted codewars katas.
+Readable Rust solutions to assorted codewars katas.
